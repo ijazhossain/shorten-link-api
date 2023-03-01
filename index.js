@@ -23,6 +23,7 @@ function displayShortLink(data) {
     button.setAttribute('onclick', 'myFunction()');
     button.classList.add('btn');
     button.classList.add('btn-success');
+    button.classList.add('text-white');
     button.classList.add('ms-3');
     button.classList.add('text-success');
     button.innerText = 'Copy Link'
@@ -38,7 +39,12 @@ function displayShortLink(data) {
 document.getElementById('generate-btn').addEventListener('click', () => {
     const inputField = document.getElementById('input-field');
     const link = inputField.value;
-    loadData(link);
+    if (link) {
+
+        loadData(link);
+    } else {
+        alert('provide a link');
+    }
     inputField.value = '';
 })
 document.getElementById('eye-btn').addEventListener('click', function () {

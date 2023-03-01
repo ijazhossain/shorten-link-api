@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        #eye-btn {
+            width: 20px;
+            height: 20px;
+            right: 130px;
+            top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="container bg-primary-subtle">
+    <h1 class="text-center py-5 mb-3 text-primary text-decoration-underline
+    ">Shorten Your Link</h1>
+
+    <div class="input-group mb-5 w-50 mx-auto position-relative">
+        <input id="input-field" type="text" class="form-control py-2" placeholder="Enter your link"
+            aria-label="Enter your link" aria-describedby="button-addon2">
+        <svg id="eye-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class=" position-absolute z-3">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+
+        <button id="generate-btn" class="btn btn-outline-primary" type="button" id="button-addon2">Generate
+            Link</button>
+    </div>
+    <!-- <div class="d-flex align-items-center justify-content-start w-50 mx-auto mt-5">
+        <h6 class="me-4">Short Domain:</h6>
+        <div class="btn-group w-25  " role="group" aria-label="Basic mixed styles example">
+
+            <button type="button" class="btn btn-danger">Shrtco.de</button>
+            <button type="button" class="btn btn-warning mx-2">9qr.de</button>
+            <button type="button" class="btn btn-success">shinky.link</button>
+        </div>
+    </div> -->
+    <div id="short-link-container">
+
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
